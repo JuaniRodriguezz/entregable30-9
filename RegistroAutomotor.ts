@@ -1,11 +1,11 @@
-import { Vehiculos } from "./Vehiculos";
-import { Ruedas } from "./Caracteristicas";
+import { Vehiculo } from "./Vehiculos";
+import { Ruedas } from "./Ruedas";
 
 export class RegistroAutomotor{    
     private nombre:string;
-    private vehiculos:Vehiculos[];
+    private vehiculos:Vehiculo[];
 
-    constructor(nombre:string, vehiculos?:Vehiculos[]){
+    constructor(nombre:string, vehiculos?:Vehiculo[]){
         this.nombre=nombre;
         if(vehiculos!=undefined){
             this.vehiculos=vehiculos;
@@ -25,7 +25,7 @@ export class RegistroAutomotor{
         this.vehiculos=this.vehiculos.filter(vehiculo=>vehiculo.getModelo()!==modelo);
     } 
     
-    obtenerAuto():Vehiculos[]{
+    obtenerAuto():Vehiculo[]{
         return this.vehiculos;
     }
 }

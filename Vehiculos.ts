@@ -1,6 +1,6 @@
-import { Ruedas } from "./Caracteristicas";
+import { Ruedas } from "./Ruedas";
 
-export class Vehiculos{
+export class Vehiculo{
     private marca:string;
     private modelo:string;
     private tipo:string;
